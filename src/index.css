@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply overflow-x-hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  body {
+    @apply bg-gray-100;
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .perspective {
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  }
+
+  /* Mobile padding for main content */
+  @media (max-width: 768px) {
+    main {
+      padding-bottom: 5rem !important;
+    }
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.property-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
