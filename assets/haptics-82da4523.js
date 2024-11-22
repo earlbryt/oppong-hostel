@@ -1,0 +1,1 @@
+import{c as a}from"./index-bb316555.js";const t=a("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]]),e={light:()=>{"vibrate"in navigator&&navigator.vibrate(10)},medium:()=>{"vibrate"in navigator&&navigator.vibrate(15)},heavy:()=>{"vibrate"in navigator&&navigator.vibrate(20)}};export{t as C,e as h};
